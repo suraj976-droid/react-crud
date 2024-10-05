@@ -1,5 +1,7 @@
 Backend -> Index.js    connection & query file
-Terminal : In Backend Folder   -> npm i mysql express nodemon cors
+
+Terminal : In Backend Folder   -> 
+                                 npm i mysql express nodemon cors
 
 Frontend -> App.js     Routing
          -> Test.js    Crud Form ,UseState, UseEffect , Import & and Html code [ Component ]
