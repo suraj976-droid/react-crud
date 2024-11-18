@@ -30,7 +30,7 @@ BACKEND me accept karne ka tarika yeh hai
   };
 
 Backend:
------>>>>>
+-------
   app.get('/requestdatacat/:id', (req, res) => {
   const { id } = req.params; // URL se user ki id ko extract kar rahe hain
   const sql = "SELECT * FROM awt_category WHERE id = ? AND deleted = 0"; // User ko uske ID aur soft-delete status ke base par fetch karne ki query
