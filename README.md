@@ -58,8 +58,10 @@ FRONTEND -->     `${Base_Url}/deletecatdata`, { id }
     }
   };
 
-BACKEND: ------>  aise value lete hai from url axios.
-                        app.post('/deletecatdata', (req, res) => {
+BACKEND:   aise value lete hai from url axios.
+=====
+          app.post('/deletecatdata', (req, res) => {
+          
           const { id } = req.body; // Request body se user ki ID ko extract kar rahe hain
           const sql = `UPDATE awt_category SET deleted = 1 WHERE id = ?`; // User ko soft-delete karne ki SQL query (deleted column ko 1 kar dena)
           con.query(sql, [id], (err, data) => { // SQL query ko execute kar rahe hain, id ko parameter ke roop me pass kar rahe hain
